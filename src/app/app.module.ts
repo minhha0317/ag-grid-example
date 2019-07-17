@@ -1,16 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AgGridModule } from 'ag-grid-angular';
+
 import { AppComponent } from './app.component';
+import { AgGridCommonComponent } from './ag-grid-common/ag-grid-common.component';
+import { BasicGridComponent } from './basic-grid/basic-grid.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AgGridCommonComponent,
+    BasicGridComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AgGridModule.withComponents([])
   ],
   providers: [],
   bootstrap: [AppComponent]

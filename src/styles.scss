@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~ag-grid-community/dist/styles/ag-grid.css";
+@import "~ag-grid-community/dist/styles/ag-theme-balham.css";
+
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+
+  &.active {
+    text-decoration: underline;
+    color: cornflowerblue;
+    font-weight: bold;
+  }
+}
