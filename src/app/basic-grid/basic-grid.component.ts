@@ -30,7 +30,7 @@ export class BasicGridComponent implements OnInit {
     ];
   }
 
-  callBackGrid(params) {
+  gridRendered(params) {
     /**
      * Set row data using built-in function of ag-Grid params
      * headerName will be displayed. If not defined, ag-Grid will use field

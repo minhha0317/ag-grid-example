@@ -9,7 +9,7 @@ export class AgGridCommonComponent implements OnInit {
   @Input() gridColDef: Array<any>;
   @Input() rowData: Array<any>;
 
-  @Output() callBackGrid = new EventEmitter<any>();
+  @Output() gridRendered = new EventEmitter<any>();
 
   params: any;
 
@@ -18,9 +18,9 @@ export class AgGridCommonComponent implements OnInit {
   ngOnInit() {
   }
 
-  renderGrid(params) {
+  gridReady(params) {
     this.params = params;
-    this.callBackGrid.emit(params);
+    this.gridRendered.emit(params);
   }
 
 
