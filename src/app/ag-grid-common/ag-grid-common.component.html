@@ -1,7 +1,11 @@
 <ag-grid-angular
-  style="width: 500px; height: 500px;"
+  style="width: 700px; height: 500px;"
   class="ag-theme-balham"
   [columnDefs]="gridColDef"
+  [frameworkComponents]="frameworkComponents"
+
   (gridReady)="gridReady($event)"
+  (cellEditingStarted)="cellEditingStarted.emit($event)"
+  (cellEditingStopped)="cellEditingStopped.emit($event)"
 >
 </ag-grid-angular>

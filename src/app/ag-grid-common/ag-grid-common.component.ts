@@ -8,8 +8,11 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class AgGridCommonComponent implements OnInit {
   @Input() gridColDef: Array<any>;
   @Input() rowData: Array<any>;
+  @Input() frameworkComponents;
 
   @Output() gridRendered = new EventEmitter<any>();
+  @Output() cellEditingStarted = new EventEmitter<any>();
+  @Output() cellEditingStopped = new EventEmitter<any>();
 
   params: any;
 
@@ -22,6 +25,4 @@ export class AgGridCommonComponent implements OnInit {
     this.params = params;
     this.gridRendered.emit(params);
   }
-
-
 }
