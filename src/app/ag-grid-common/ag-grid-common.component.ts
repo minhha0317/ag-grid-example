@@ -9,6 +9,7 @@ export class AgGridCommonComponent implements OnInit {
   @Input() gridColDef: Array<any>;
   @Input() rowData: Array<any>;
   @Input() frameworkComponents;
+  @Input() stopEditingWhenGridLosesFocus: boolean = true;
 
   @Output() gridRendered = new EventEmitter<any>();
   @Output() cellEditingStarted = new EventEmitter<any>();

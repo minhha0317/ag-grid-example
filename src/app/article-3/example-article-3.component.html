@@ -1,0 +1,5 @@
+<app-ag-grid [gridColDef]="gridColDef"
+             (gridRendered)="gridRendered($event)"
+             (cellEditingStopped)="cellEditingStopped($event)"
+></app-ag-grid>
+<button (click)="submitGridData()">Submit Grid data</button>

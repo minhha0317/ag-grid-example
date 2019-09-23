@@ -3,6 +3,7 @@
   class="ag-theme-balham"
   [columnDefs]="gridColDef"
   [frameworkComponents]="frameworkComponents"
+  [stopEditingWhenGridLosesFocus]="stopEditingWhenGridLosesFocus"
 
   (gridReady)="gridReady($event)"
   (cellEditingStarted)="cellEditingStarted.emit($event)"
