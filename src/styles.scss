@@ -2,6 +2,9 @@
 @import "~ag-grid-community/dist/styles/ag-grid.css";
 @import "~ag-grid-community/dist/styles/ag-theme-balham.css";
 
+@import '~ngx-toastr/toastr';
+//@import '~ngx-toastr/toastr-bs4-alert';
+
 * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
